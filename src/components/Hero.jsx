@@ -48,6 +48,7 @@ const Hero = () => {
   const handleSuggestionClick = (suggestion) => {
     setSearchTerm(suggestion.name.toLowerCase());
     setShowSuggestions(false);
+    navigate(`/hobbies?search=${encodeURIComponent(suggestion.name)}`);
   };
 
   const handleInputFocus = () => {
@@ -57,8 +58,11 @@ const Hero = () => {
         hobby.category.toLowerCase().startsWith(searchTerm)
       ).slice(0, 5);
       setFilteredSuggestions(suggestions);
-      setShowSuggestions(true);
+    } else {
+      // Show default suggestions when no search term
+      setFilteredSuggestions(hobbies.slice(0, 5));
     }
+    setShowSuggestions(true);
   };
 
   const handleInputBlur = () => {

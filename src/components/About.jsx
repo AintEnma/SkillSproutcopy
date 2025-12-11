@@ -16,9 +16,9 @@ const About = () => {
       name: 'Rom Navarro',
       bio: 'Creative coder focused on user experience and front-end technologies, always pushing the boundaries of design.',
       social: {
-        facebook: 'https://facebook.com/romnavarro',
-        instagram: 'https://instagram.com/romnavarro',
-        linkedin: 'https://linkedin.com/in/romnavarro',
+        facebook: 'https://facebook.com/',
+        instagram: 'https://instagram.com/',
+        linkedin: 'https://linkedin.com/in/',
         github: 'https://github.com/AintEnma'
       }
     },
