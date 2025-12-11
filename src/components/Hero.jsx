@@ -98,7 +98,8 @@ const Hero = () => {
                   className="suggestion-item"
                   onClick={() => handleSuggestionClick(suggestion)}
                 >
-                  <strong>{suggestion.name}</strong>  <span
+                  <strong>{suggestion.name}</strong>
+                  <span
                     onClick={(e) => {
                       e.stopPropagation();
                       handleCategoryClick(suggestion.category);
@@ -125,4 +126,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
