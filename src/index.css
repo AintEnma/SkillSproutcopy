@@ -465,7 +465,11 @@ code {
   border-bottom: 1px solid #eee;
   transition: background-color 0.2s;
   color: black;
+   display: flex;
+  justify-content: space-between; /* This pushes items to far left and far right */
+  align-items: center;
 }
+
 
 .suggestion-item:hover {
   background-color: #f8f9fa;
